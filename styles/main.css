@@ -1,0 +1,40 @@
+.image {
+  width: 100%;
+  height: 100%;
+}
+.image-container {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  padding: 60px 10px;
+  flex-direction: column;
+}
+
+.header-text {
+  font-size: 24px;
+  padding: 20px 10px;
+}
+
+.body-text {
+  padding: 10px;
+}
+
+.skills-screen {
+  display: flex;
+}
+.underline {
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+ul {
+  padding-left: 20px;
+}
