@@ -22,6 +22,7 @@
 .header-text {
   font-size: 24px;
   padding: 20px 10px;
+  color: #533b78;
 }
 
 .body-text {
@@ -37,4 +38,48 @@
 }
 ul {
   padding-left: 20px;
+}
+a.underline {
+  color: #533b78;
+}
+.button {
+  border: 1px solid #533b78;
+  padding: 10px;
+  border-radius: 3px;
+  color: #533b78;
+}
+.education-screen {
+  position: relative;
+}
+.faded-background {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  opacity: .2;
+}
+.faded-background.right {
+  right: 0;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background-color: #533b78;
+  display: flex;
+  flex-direction: column;
+  margin: 20px -15px 0;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+}
+
+.footer-link {
+  font-size: 24px;
+  margin: 10px;
+  color: white;
+}
+
+.footer-link:visited {
+  color: white;
 }
