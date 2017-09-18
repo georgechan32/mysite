@@ -1,149 +1,86 @@
-.image {
-  width: 100%;
-  height: 100%;
-}
-.image-container {
-  max-width: 250px;
-  max-height: 250px;
-  border-radius: 50%;
+body {
+  margin: 0;
+  font-family: arial;
   overflow: hidden;
 }
-
-.center {
-  justify-content: center;
-  align-items: center;
+div {
+  box-sizing: border-box;
 }
-
-.header {
-  padding: 60px 10px;
-  flex-direction: column;
-}
-
-.header-text {
-  font-size: 24px;
-  padding: 20px 10px;
-  color: #533b78;
-}
-
-.body-text {
-  padding: 10px;
-}
-
-.skills-screen {
-  display: flex;
-}
-.underline {
-  text-decoration: underline;
-  padding-bottom: 10px;
-}
-ul {
-  padding-left: 20px;
-}
-a.underline {
-  color: #533b78;
-}
-.button {
-  border: 1px solid #533b78;
-  padding: 10px;
-  border-radius: 3px;
-  color: #533b78;
-}
-.button:hover{
-  background: #533b78;
-  color: white;
-}
-.education-screen {
-  position: relative;
-}
-.faded-background {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  opacity: .2;
-}
-.faded-background.right {
-  right: 0;
-}
-
-.footer {
+.background-img {
   width: 100%;
-  padding: 20px;
-  color: white;
-  background-color: #533b78;
-  display: flex;
-  flex-direction: column;
-  margin: 20px -15px 0;
-  align-items: center;
-  justify-content: center;
-  box-sizing: content-box;
 }
-
-.footer-link {
-  font-size: 24px;
-  margin: 10px;
-  color: white;
+.content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 75%;
+  background: white;
 }
-
-.footer-link:visited {
-  color: white;
-}
-
-.desktop {
-  display: none;
-}
-.mobile {
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  text-align: center;
   display: block;
+  margin: auto;
+  margin-top: -75px;
 }
-@media only screen and (min-width: 750px) {
-  .container {
-    max-width: none !important;
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 50%;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-height: 600px;
+}
+.link,
+.link:visited {
+    color: black;
+  font-size: 20px;
+}
+.link:hover {
+  font-weight: bold;
+}
+.title {
+  text-align: center;
+  font-size: 20px;
+  padding: 15px 0px 3px;
+  text-decoration: underline;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  margin: 0 auto;
+}
+.title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 720px) {
+  .links {
+    flex-direction: row;
+    padding: 30px;
   }
-  .header-text,
-  .body-text {
-    margin: 0 10%;
-  }
-  .body-text {
-    color: white;
-    background: #b3b3b3;
-    font-size: 20px;
-  }
-  a {
-    font-size: 20px;
-  }
-  .mobile {
-    display: none;
-  }
-  .header-text {
-    font-size: 40px;
-    padding-top: 40px;
-  }
-  .image-container  {
-    max-width: 400px;
-    max-height: 400px;
-  }
-  .landing-screen {
-    height: 50vh;
-  }
-  .about-me-screen {
-    height: 50vh;
-    position: relative;
-  }
-  .desktop {
+  .link,
+  .link:visited {
+    font-size: 30px;
+    width: 200px;
     display: block;
+    text-align: center;
   }
-  .wide-center {
-    margin: 0 -25%;
+  .profile-img {
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
   }
-  .dual-column {
-    display: flex;
-    width: 100%;
+  .content {
+    height: 50%;
+    bottom: auto;
+    top: 50%;
   }
-  .dual-column .halfcol {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-  }
-  .skills-screen {
-    height: 100vh;
+  .title {
+    font-size: 30px;
   }
 }
